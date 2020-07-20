@@ -1,0 +1,5 @@
+<node pkg ="package_where_cpp_is"
+      type="name_of_binary_after_compiling_cpp"
+      name="name_of_the_node_initialised_in_cpp"
+      output="screen">
+</node>
