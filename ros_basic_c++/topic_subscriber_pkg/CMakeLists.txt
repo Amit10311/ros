@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(topic_subscriber_pkg)
-
 ## Compile as C++11, supported in ROS Kinetic and newer
  add_compile_options(-std=c++11)
 
@@ -12,8 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
 # find_package(Boost REQUIRED COMPONENTS system)
 
 # catkin_python_setup()
-
-
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -24,8 +21,6 @@ catkin_package(
 #  CATKIN_DEPENDS roscpp std_msgs
 #  DEPENDS system_lib
 )
-
-
 
 include_directories(
 # include
@@ -39,11 +34,12 @@ include_directories(
 
 
 # add_executable(${PROJECT_NAME}_node src/topic_subscriber_pkg_node.cpp)
+# add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(${PROJECT_NAME}_node
+#   ${catkin_LIBRARIES}
+# )
 
 add_executable( simple_topic_subscriber src/simple_topic_subscriber.cpp)
-
-# add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
 add_dependencies( simple_topic_subscriber 
                  ${simple_topic_subscriber_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
                  
@@ -59,9 +55,7 @@ target_link_libraries(odom_subscriber
    ${catkin_LIBRARIES}
  )
  
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+
 
 ## either from message generation or dynamic reconfigure
 
