@@ -2,7 +2,8 @@
 #include <ros/ros.h>
 
 void counterCallback(const nav_msgs::Odometry::ConstPtr &msg) {
-  ROS_INFO("%s", msg->header.frame_id.c_str());
+  ROS_INFO("%s", msg->header.frame_id.c_str());                // Header header
+
   // ROS_INFO("%f", msg->twist.twist.linear.x);
   // ROS_INFO("%f", msg->pose.pose.position.x);
 }
