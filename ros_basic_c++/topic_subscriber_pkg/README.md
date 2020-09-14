@@ -14,3 +14,10 @@ void counterCallback(const sensor_msgs::PointCloud2::ConstPtr& msg)        // De
  //  ROS_INFO("%s", msg->is_dense.bool; 
 ```
 [ PCL tutorial in ROS](http://library.isr.ist.utl.pt/docs/roswiki/perception_pcl(2f)Tutorials.html)
+
+
+[PCL Overview](http://wiki.ros.org/pcl/Overview)
+
+
+[ros msg](http://wiki.ros.org/msg)
+
