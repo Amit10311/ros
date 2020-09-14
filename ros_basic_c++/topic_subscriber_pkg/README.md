@@ -1,5 +1,4 @@
-# Header header
-
+# Subscribe data
 
 ```bash
 void counterCallback(const sensor_msgs::PointCloud2::ConstPtr& msg)        // Define a function called 'callback' that receives a 
