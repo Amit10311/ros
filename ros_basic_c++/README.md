@@ -25,3 +25,7 @@ nh.getParam("private_name", param);
 ros::Rate loop_rate(2);     // object of 2Hz
 // 2 cycles/s
 ```
+4. http://docs.ros.org/indigo/api/roscpp/html/classros_1_1Publisher.html
+```bash
+#include <publisher.h>
+```
