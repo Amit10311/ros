@@ -20,6 +20,8 @@ nh.getParam("private_name", param);
 ```
 3. http://docs.ros.org/diamondback/api/rostime/html/classros_1_1Rate.html
 ```bash
+#include <rate.h>
+
 ros::Rate loop_rate(2);     // object of 2Hz
 // 2 cycles/s
 ```
