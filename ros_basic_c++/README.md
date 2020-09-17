@@ -21,5 +21,5 @@ nh.getParam("private_name", param);
 
 ```bash
 ros::Rate loop_rate(2);     // object of 2Hz
-2 cycles/s
+                             // 2 cycles/s
 ```
