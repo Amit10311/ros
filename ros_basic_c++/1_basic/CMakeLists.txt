@@ -8,35 +8,22 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
 )
-
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-
-
-## Uncomment this if the package has a setup.py. This macro ensures
-## modules and global scripts declared therein get installed
-## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
 
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
 
-
-
-
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
-
-
 
 ## Generate dynamic reconfigure parameters in the 'cfg' folder
 # generate_dynamic_reconfigure_options(
 #   cfg/DynReconf1.cfg
 #   cfg/DynReconf2.cfg
 # )
-
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -53,8 +40,7 @@ catkin_package(
 ## Build ##
 ###########
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
+
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
@@ -65,8 +51,7 @@ include_directories(
 #   src/${PROJECT_NAME}/my_package.cpp
 # )
 
-## Add cmake target dependencies of the library
-## as an example, code may need to be generated before libraries
+raries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
@@ -83,7 +68,4 @@ target_link_libraries(simple
  target_link_libraries(simple_loop
    ${catkin_LIBRARIES}
  )
-
-
-
 
