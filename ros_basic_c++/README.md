@@ -1,14 +1,12 @@
-
+1. http://www.cplusplus.com/reference/cstdio/printf/
 ```bash
 %d is for int
 %c is for char
 %f is for float
 ("%s", msg->header.frame_id.c_str());                 Header header
 ```
-http://www.cplusplus.com/reference/cstdio/printf/
 
-
-
+2 http://wiki.ros.org/roscpp/Overview/Parameter%20Server
 ```bash
 ros::Publisher _local_map_pub;
 
@@ -21,4 +19,3 @@ std::string param;
 nh.getParam("private_name", param);
 ```
 
-http://wiki.ros.org/roscpp/Overview/Parameter%20Server
