@@ -29,3 +29,4 @@ ros::Rate loop_rate(2);     // object of 2Hz
 ```bash
 #include <publisher.h>
 ```
+5. http://wiki.ros.org/std_srvs
