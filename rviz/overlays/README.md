@@ -23,7 +23,7 @@ text_pub.publish(text)```
 
 Here you have the complete message:
 
-```
+```bash
 rosmsg show jsk_rviz_plugins/OverlayText
 uint8 ADD=0
 uint8 DELETE=1
