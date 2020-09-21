@@ -22,7 +22,9 @@ Counter = <span style="color: green;">%d.</span>
 """ % (str(number), str(number2) ,self.counter)
 text.fg_color = ColorRGBA(25 / 255.0, 1.0, 240.0 / 255.0, 1.0)
 text.bg_color = ColorRGBA(0.0, 0.0, 0.0, 0.2)
-text_pub.publish(text)```
+text_pub.publish(text)
+```
+
 
 
 Here you have the complete message:
@@ -49,7 +51,8 @@ std_msgs/ColorRGBA fg_color
   float32 g
   float32 b
   float32 a
-string text```
+string text
+```
 
 
 # Menu
@@ -58,12 +61,14 @@ string text```
 menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
 menu = OverlayMenu()
 menu.title = "HaroSystemMode"
-menu.menus = ["Sleep", "Searching", "MovingInCircles","Waiting"]```
+menu.menus = ["Sleep", "Searching", "MovingInCircles","Waiting"]
+```
 
 Index 1 is Searching
 
 ```bash
 menu.current_index = 1
-menu_publisher.publish(menu)```
+menu_publisher.publish(menu)
+```
 
 
