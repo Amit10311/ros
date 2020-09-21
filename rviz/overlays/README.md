@@ -1,4 +1,6 @@
 
+Adding Plots, PieCharts, and Menus
+
 ```text_pub = rospy.Publisher("/text_sample", OverlayText, queue_size=1)
 
 text = OverlayText()
