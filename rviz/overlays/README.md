@@ -1,5 +1,5 @@
 
-Adding Plots, PieCharts, and Menus
+# Adding Plots, PieCharts, and Menus
 
 ```text_pub = rospy.Publisher("/text_sample", OverlayText, queue_size=1)
 
@@ -20,7 +20,7 @@ text.fg_color = ColorRGBA(25 / 255.0, 1.0, 240.0 / 255.0, 1.0)
 text.bg_color = ColorRGBA(0.0, 0.0, 0.0, 0.2)
 text_pub.publish(text)```
 
-Menu
+# Menu
 
 ```bash
 menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
@@ -28,7 +28,7 @@ menu = OverlayMenu()
 menu.title = "HaroSystemMode"
 menu.menus = ["Sleep", "Searching", "MovingInCircles","Waiting"]```
 
-# Index 1 is Searching
+Index 1 is Searching
 
 ```bash
 menu.current_index = 1
