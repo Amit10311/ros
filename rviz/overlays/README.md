@@ -1,6 +1,5 @@
 
 ```bash
-
 text_pub = rospy.Publisher("/text_sample", OverlayText, queue_size=1)
 
 text = OverlayText()
@@ -22,8 +21,7 @@ text.bg_color = ColorRGBA(0.0, 0.0, 0.0, 0.2)
 text_pub.publish(text)```
 
 
-```
-menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
+```bash menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
 menu = OverlayMenu()
 menu.title = "HaroSystemMode"
 menu.menus = ["Sleep", "Searching", "MovingInCircles","Waiting"]```
