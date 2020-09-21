@@ -20,6 +20,34 @@ text.fg_color = ColorRGBA(25 / 255.0, 1.0, 240.0 / 255.0, 1.0)
 text.bg_color = ColorRGBA(0.0, 0.0, 0.0, 0.2)
 text_pub.publish(text)```
 
+
+Here you have the complete message:
+
+```
+rosmsg show jsk_rviz_plugins/OverlayText
+uint8 ADD=0
+uint8 DELETE=1
+uint8 action
+int32 width
+int32 height
+int32 left
+int32 top
+std_msgs/ColorRGBA bg_color
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+int32 line_width
+float32 text_size
+string font
+std_msgs/ColorRGBA fg_color
+  float32 r
+  float32 g
+  float32 b
+  float32 a
+string text```
+
+
 # Menu
 
 ```bash
