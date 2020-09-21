@@ -21,7 +21,8 @@ text.bg_color = ColorRGBA(0.0, 0.0, 0.0, 0.2)
 
 text_pub.publish(text)```
 
-```bash
+
+```
 menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
 menu = OverlayMenu()
 menu.title = "HaroSystemMode"
