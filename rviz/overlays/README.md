@@ -20,7 +20,7 @@ text_pub.publish(text)```
 
 Menu
 
-```
+```bash
 menu_publisher = rospy.Publisher("/test_menu", OverlayMenu, queue_size=1)
 menu = OverlayMenu()
 menu.title = "HaroSystemMode"
