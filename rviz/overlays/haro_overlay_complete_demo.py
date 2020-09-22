@@ -30,6 +30,7 @@ class HaroOverlay(object):
 
     def twist_callback(self, msg):
         self.plot_value = msg.linear.x
+        # angle 
         self.piechart_value = msg.angular.z
 
     def update_overlaytext(self, number=1.23, number2=20):  
