@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find iri_wam_reproduce_trajectory)/launch/start_service.launch"/>
+
+  <!-- Here will go our C++ code that calls the execute_trajectory service -->
+
+</launch>
